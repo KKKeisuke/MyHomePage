@@ -11,13 +11,22 @@
     <header>
         <div class="container">
             <i id="open_menu" class="fas fa-bars"></i>
+            <!-- <nav id="menu" class="shown"> -->
+            <nav id="menu">
+                <i id="close_menu" class="fas fa-times"></i>
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </nav>
             <h1>My app</h1>
         </div>
     </header>
 
     <section class="features">
         <div class="container">
-            <h1>Features</h1>
+            <h1 class="section-title">Features</h1>
             <section class="feature">
                 <img src="./img/feature1.png" alt="画像1" width="1200" height="800">
                 <p>hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.</p>
@@ -35,7 +44,7 @@
 
     <section class="news">
         <div class="container">
-            <h1>News</h1>
+            <h1 class="section-title">News</h1>
             <article class="news-item">
                 <img src="./img/news.png" alt="nwes画像">
                 <p>hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.hello.</p>
@@ -50,5 +59,22 @@
             </article>
         </div>
     </section>
+
+    <section class="how-to-use">
+        <div class="container">
+            <h1 class="section-title">How to use</h1>
+            <div class="iframe-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TTpiKfljRzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; dotinstall.com
+    </footer>
+
+    <script>
+        document.getElementById('open_menu').addEventListener('click',function(){alert('Clicked!'); });
+    </script>
 </body>
 </html>

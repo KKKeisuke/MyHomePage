@@ -9,6 +9,17 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+body > section{
+    padding: 60px 0;
+}
+body > section:nth-of-type(odd){
+    background: #FFF;
+}
+.section-title{
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 60px;
+}
 header h1{
     font-size: 28px;
     font-weight: normal;
@@ -18,14 +29,10 @@ header h1{
     font-size: 24px;
     cursor: pointer;
 }
-.features{
-    padding: 60px 0;
-    background: #FFF;
-}
-.features h1{
-    text-align: center;
-    font-weight: normal;
-    margin: 0 0 60px;
+#close_menu{
+    padding: 15px;
+    float: right;
+    cursor: pointer;
 }
 .feature p{
     word-wrap: break-word;
@@ -46,4 +53,55 @@ header h1{
 }
 .news-item p{
     word-wrap: break-word;
+}
+.how-to-use iframe{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*
+親要素の幅 : 高さ = 16 : 9
+100% : x% = 16 : 9
+x% = 9 * 100% / 16 = 56.25 %
+*/
+
+.how-to-use .iframe-wrapper{
+    width: 100%;
+    /* background: pink; */
+    /*親要素の幅に対しての割合*/
+    padding-bottom: 56.25%;
+    /*高さがpaddingだけで出るように*/
+    height: 0;
+    position: relative;
+}
+footer{
+    text-align: center;
+    padding: 60px 0;
+    color: #CCC;
+}
+#menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /*left:0 right:0 で横幅いっぱいに広がってくれる*/
+    background: rgba(0, 0, 0, .9);
+    color: #FFF;
+}
+#menu.shown{
+    display: block;
+}
+#menu ul{
+    list-style: none; /*先頭の黒丸を消す*/
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+#menu li{
+    line-height: 2;
+}
+#menu a{
+    text-decoration: none; /*下線を消す*/
+    color: inherit; /*文字色を親要素から引き継ぐ*/
 }
