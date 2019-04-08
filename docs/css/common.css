@@ -1,9 +1,3 @@
-@charset "utf-8";
-
-@font-face {
-	font-family: 'JiyunoTsubasa',serif;
-	src: url(../fonts/JiyunoTsubasa/JiyunoTsubasa.ttf) format('truetype');
-}
 
 /*==============================
 	基本設定
@@ -11,11 +5,12 @@
 body{
 	color:#1D1D1D;
 	font-size:16px;
-	font-family:'Noto Sans JP', sans-serif;
+	/* font-family:'Covered By Your Grace'; */
+	font-family: 'Covered By Your Grace', cursive;
 	margin:0;
 	padding:0;
 	text-align:left;
-	background:#fff;
+	background:#A9A9A9;
 	-webkit-text-size-adjust:100%;
 	position:relative;
 	min-width: 1240px;
@@ -39,7 +34,7 @@ th{
 .fHannari{font-family:'Hannari';}
 .fNotoserif{font-family:'Noto Serif Japanese';}
 .fDancing{font-family:'DancingScript';}
-.fJiyu{font-family:'JiyunoTsubasa';}
+.fGrace{font-family:'Covere By Your Grace', cursive;}
 
 /*rollover*/
 .ro a:hover,

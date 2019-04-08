@@ -1,13 +1,63 @@
+
 .container{
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 }
 
-header h1{
-    font-size: 50px;
+/* header */
+header .headerBox{
+    height: 60px;
+    background: rgba(255, 255, 255,0.25);
 }
-header h1::after{
-    font-size: 30px;
-    font-family: 'JiyunoTsubasa';
-    content: "〜 I play a lot of roles 〜"；
+header .container{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+header .headerTit{
+    font-size: 24px;
+    font-weight: bold;
+    width: 300px;
+}
+header .headerNav{
+    width: 350px;
+}
+header .navList{
+    display: flex;
+    justify-content: space-between;
+}
+header .navList li{
+    padding-top: 5px;
+    list-style: none;
+}
+header .navList li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #1D1D1D;
+}
+
+/* #top */
+#top{
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: center;
+    padding-top: 120px;
+    letter-spacing: 2px;
+}
+#top .topTit{
+    width: 400px;
+    font-size: 65px;
+    position: relative; 
+    margin: 0 auto;
+}
+#top .topTit:after{
+    content: "~ I play a lot of roles ~";
+    width: 400px;
+    font-size: 28px;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+#top .img{
+    margin-top: 60px;
 }
