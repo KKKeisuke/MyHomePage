@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'JiyunoTsubasa',serif;
+	src: url(../fonts/JiyunoTsubasa/JiyunoTsubasa.ttf) format('truetype');
+}
+
+/*==============================
+	基本設定
+==============================*/
+body{
+	color:#1D1D1D;
+	font-size:16px;
+	font-family:'Noto Sans JP', sans-serif;
+	margin:0;
+	padding:0;
+	text-align:left;
+	background:#fff;
+	-webkit-text-size-adjust:100%;
+	position:relative;
+	min-width: 1240px;
+}
+@media only screen and (max-width:767px){
+	body{
+		min-width:0;
+	}
+}
+body *, body *::before, body *::after{box-sizing:border-box;}
+img{vertical-align:bottom;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+th{
+	font-weight:normal;
+	text-align:left;
+}
+
+/*font layout*/
+.fBold{font-weight:bold;}
+.fVerdana{font-family:Verdana;}
+.fHannari{font-family:'Hannari';}
+.fNotoserif{font-family:'Noto Serif Japanese';}
+.fDancing{font-family:'DancingScript';}
+.fJiyu{font-family:'JiyunoTsubasa';}
+
+/*rollover*/
+.ro a:hover,
+a.ro:hover,
+a .ro:hover{ filter:alpha(opacity=80);opacity:0.8; }
+.ro a,
+a.ro,
+a .ro{
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+/*rollover(brightnessによる変化)*/
+.brt a:hover,a.brt:hover,a .brt:hover{ -webkit-filter: brightness(1.1);filter: brightness(1.1); }
+.brt a,
+a.brt,
+a .brt{
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+/*ro無効化*/
+.ro .no_ro a:hover,
+.ro a.no_ro:hover{ filter:alpha(opacity=100);opacity:1; }
+
+/*========================================
+	レスポンシブ用(不要な場合は削除)
+========================================*/
+.spOnly,
+.brSp,
+.imgSp{
+	display:none;
+}
+@media only screen and (max-width:767px){
+	.spNone,
+	.brPc,
+	.imgPc{
+		display:none;
+	}
+	.spOnly{
+		display:block;
+	}
+	.brSp,
+	.imgSp{
+		display:inline;
+	}
+	.imgR{
+		width:100%;
+		height:auto;
+	}
+}
