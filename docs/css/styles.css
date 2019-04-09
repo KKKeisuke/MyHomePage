@@ -4,31 +4,37 @@
     margin: 0 auto;
 }
 
+@media only screen and (max-width:767px){
+    .container{
+        width: 97.35%;
+        margin: 0 auto;
+    }
+}
+
 /* header */
 header .headerBox{
     height: 60px;
     background: rgba(255, 255, 255,0.25);
 }
-header .container{
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 1px;
-}
 header .headerTit{
     font-size: 24px;
     font-weight: bold;
-    width: 300px;
+    width: 120px;
+    float: left;
 }
 header .headerNav{
-    width: 350px;
+    width: 300px;
+    float: right;
 }
 header .navList{
-    display: flex;
-    justify-content: space-between;
+    font-size: 0;
+    padding: 0;
 }
 header .navList li{
-    padding-top: 5px;
+    display: inline-block;
+    padding-top: 15px;
     list-style: none;
+    margin-right: 46px;
 }
 header .navList li a{
     text-decoration: none;
@@ -36,9 +42,43 @@ header .navList li a{
     color: #1D1D1D;
 }
 
+@media only screen and (max-width:767px){
+    header .headerBox{
+        height: auto;
+        background: rgba(255, 255, 255,0.25);
+        padding: 2%;
+    }
+    header .headerTit{
+        font-size: 24px;
+        font-weight: bold;
+        width: 30%;
+        float: none;
+        margin: 0;
+    }
+    header .headerNav{
+        width: 100%;
+        float: none;
+        display: none;
+    }
+    /* header .navList{
+        font-size: 0;
+        padding: 0;
+    } */
+    /* header .navList li{
+        display: inline-block;
+        padding-top: 15px;
+        list-style: none;
+        margin-right: 46px;
+    } */
+    /* header .navList li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #1D1D1D;
+    } */
+}
+
 /* #top */
 #top{
-    font-family: 'Covered By Your Grace', cursive;
     text-align: center;
     padding-top: 120px;
     letter-spacing: 2px;
@@ -48,16 +88,40 @@ header .navList li a{
     font-size: 65px;
     position: relative; 
     margin: 0 auto;
+    letter-spacing: 5px;
 }
 #top .topTit:after{
-    content: "~ I play a lot of roles ~";
+    content: "〜 I play a lot of roles 〜";
     width: 400px;
     font-size: 28px;
     display: block;
     position: absolute;
     top: 80px;
     left: 0;
+    letter-spacing: 2px;
 }
 #top .img{
     margin-top: 60px;
+}
+
+@media only screen and (max-width:767px){
+    #top{
+        text-align: center;
+        padding-top: 10%;
+        letter-spacing: 2px;
+    }
+    #top .topTit{
+        width: 100%;
+        font-size: 45px;
+    }
+    #top .topTit:after{
+        width: 100%;
+        font-size: 18px;
+        top: 85%;
+        left: 0;
+    }
+    #top .img{
+        width: 100%;
+        margin-top: 10%;
+    }
 }
