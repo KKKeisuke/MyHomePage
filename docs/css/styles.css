@@ -19,7 +19,7 @@ header .headerBox{
 header .headerTit{
     font-size: 24px;
     font-weight: bold;
-    width: 120px;
+    width: 150px;
     float: left;
 }
 header .headerNav{
@@ -51,7 +51,7 @@ header .navList li a{
     header .headerTit{
         font-size: 24px;
         font-weight: bold;
-        width: 30%;
+        width: 40%;
         float: none;
         margin: 0;
     }
@@ -60,21 +60,6 @@ header .navList li a{
         float: none;
         display: none;
     }
-    /* header .navList{
-        font-size: 0;
-        padding: 0;
-    } */
-    /* header .navList li{
-        display: inline-block;
-        padding-top: 15px;
-        list-style: none;
-        margin-right: 46px;
-    } */
-    /* header .navList li a{
-        text-decoration: none;
-        font-size: 20px;
-        color: #1D1D1D;
-    } */
 }
 
 /* #top */
@@ -101,7 +86,24 @@ header .navList li a{
     letter-spacing: 2px;
 }
 #top .img{
-    margin-top: 60px;
+    width: 273px;
+    margin: 60px auto 0;
+    position: relative;
+}
+#top #napo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#top .btn{
+    width: 400px;
+    color: #FFF;
+    font-size: 22px;
+    background: #696969;
+    border-radius: 30px;
+    margin: 420px auto 0;
+    padding: 10px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:767px){

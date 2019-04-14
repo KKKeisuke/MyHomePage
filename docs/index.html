@@ -29,8 +29,19 @@
     <section id="top">
         <div class="container">
             <h2 class="topTit">X Characters</h2>
-            <div class="img"><img src="./img/napoleon-bonaparte-67784_640.jpg" alt="ナポレオン" width="273" height="320" class="imgR"></div>
+            <div class="img"><img id="napo" src="./img/napoleon-bonaparte-67784_640.jpg" alt="ナポレオン" width="273" height="320" class="imgR"></div>
+            <div class="btn">click here !</div>
         </div>
     </section>
 </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+        // $(function(){
+            $('.btn').click(function(){
+                $('#napo').toggle(1500);
+                $('#napo').toggle(1500);
+        });
+    </script>
+
 </body>
