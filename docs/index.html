@@ -31,6 +31,19 @@
             <h2 class="topTit">X Characters</h2>
             <div class="img"><img id="napo" src="./img/napoleon-bonaparte-67784_640.jpg" alt="ナポレオン" width="273" height="320" class="imgR"></div>
             <div class="btn">click here !</div>
+            <form action="" method="POST">
+                <div class="box">
+                    <input type="text" id="name" autocomplete="off">
+                    <select name="members" id="members">
+                        <option>napoleon</option>
+                        <option>perry</option>
+                        <option>織田信長</option>
+                    </select>
+                    <div class="submit">
+                        <input type="submit" value="コメントを送信">
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 </main>
@@ -38,24 +51,36 @@
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script>
         $(function(){
-
             var cancelFlag = 0;
-
             $('.btn').click(function(){
-
                 if( cancelFlag == 0 ){
-
                     cancelFlag = 1;
-
                     $('#napo').toggle(1500);
                     $('#napo').toggle(1500);
-
                     setTimeout(function(){
                         cancelFlag = 0;
                     },3000);
-
                 }
+            });
 
+            $('.btn')
+                .mouseover(function(){
+                    $(this).css('background', '#FF00FF');
+            })
+                .mouseout(function(){
+                    $(this).css('background', '#696969');
+            });
+
+            $('#name')
+                .focus(function(){
+                $(this).css('background', '#E0FFFF');
+            })
+                .blur(function(){
+                $(this).css('background', '#FFF');
+            });
+
+            $('#members').change(function(){
+                alert('ちゃんと我輩を選んだだろうな？');
             });
         });
     </script>

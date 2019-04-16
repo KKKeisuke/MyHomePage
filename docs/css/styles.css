@@ -65,7 +65,7 @@ header .navList li a{
 /* #top */
 #top{
     text-align: center;
-    padding-top: 120px;
+    padding-top: 50px;
     letter-spacing: 2px;
 }
 #top .topTit{
@@ -105,11 +105,20 @@ header .navList li a{
     padding: 10px;
     cursor: pointer;
 }
+#top .box{
+    margin-top: 25px;
+}
+#top #name{
+    width: 250px;
+}
+#top .submit{
+    margin-top: 10px;
+}
 
 @media only screen and (max-width:767px){
     #top{
         text-align: center;
-        padding-top: 10%;
+        padding: 8% 0;
         letter-spacing: 2px;
     }
     #top .topTit{
@@ -124,6 +133,23 @@ header .navList li a{
     }
     #top .img{
         width: 60%;
-        margin: 20% auto 0;
+        margin: 15% auto 0;
+    }
+    #top .btn{
+    width: 70%;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 30px;
+    margin: 95% auto 0;
+    padding: 2%;
+    }
+    #top .box{
+        margin-top: 8%;
+    }
+    #top #name{
+        width: 30%;
+    }
+    #top .submit{
+        margin-top: 3%;
     }
 }
