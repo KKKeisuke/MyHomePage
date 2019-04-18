@@ -150,35 +150,35 @@ header .navList li a{
         left: 0;
     }
     #top .bigBox{
-    display: block;
-    margin-top: 10%;
-}
-#top .leftBox{
-    width: 100%;
-    /* display: block; */
-    /* vertical-align: top; */
-}
-#top .rightBox{
-    width: 100%;
-    /* display: block; */
-}
-#top .rightBox button{
-    width: 80%;
-    height: auto;
-    font-size: 12px;
-    /* margin: 0 auto; */
-}
+        display: block;
+        margin-top: 10%;
+    }
+    #top .leftBox{
+        width: 100%;
+        /* display: block; */
+        /* vertical-align: top; */
+    }
+    #top .rightBox{
+        width: 100%;
+        /* display: block; */
+    }
+    #top .rightBox button{
+        width: 80%;
+        height: auto;
+        font-size: 12px;
+        margin-top: 3%;
+    }
     #top .img{
         width: 60%;
         margin: 15% auto 0;
     }
     #top .btn{
-    width: 70%;
-    color: #FFF;
-    font-size: 18px;
-    border-radius: 30px;
-    margin: 5% auto 0;
-    padding: 2%;
+        width: 70%;
+        color: #FFF;
+        font-size: 18px;
+        border-radius: 30px;
+        margin: 3% auto 0;
+        padding: 2%;
     }
     #top .box{
         margin-top: 8%;
