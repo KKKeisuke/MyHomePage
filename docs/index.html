@@ -29,21 +29,28 @@
     <section id="top">
         <div class="container">
             <h2 class="topTit">X Characters</h2>
-            <div class="img"><img id="napo" src="./img/napoleon-bonaparte-67784_640.jpg" alt="ナポレオン" width="273" height="320" class="imgR"></div>
-            <div class="btn">click here !</div>
-            <form action="" method="POST">
-                <div class="box">
-                    <input type="text" id="name" autocomplete="off">
-                    <select name="members" id="members">
-                        <option>napoleon</option>
-                        <option>perry</option>
-                        <option>織田信長</option>
-                    </select>
-                    <div class="submit">
-                        <input type="submit" value="コメントを送信">
-                    </div>
-                </div>
-            </form>
+            <div class="bigBox">
+                <div class="leftBox">
+                    <div class="img"><img id="napo" src="./img/napoleon-bonaparte-67784_640.jpg" alt="ナポレオン" width="273" height="320" class="imgR"></div>
+                    <div class="btn">click here !</div>
+                    <form action="" method="POST">
+                        <div class="box">
+                            <input type="text" id="name" autocomplete="off">
+                            <select name="members" id="members">
+                                <option>napoleon</option>
+                                <option>perry</option>
+                                <option>織田信長</option>
+                            </select>
+                            <div class="submit">
+                                <input type="submit" value="コメントを送信">
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- leftBox -->
+                <div class="rightBox">
+                    <button>napoleon!!</button>
+                </div><!-- rightBox -->
+            </div>
         </div>
     </section>
 </main>
@@ -81,6 +88,17 @@
 
             $('#members').change(function(){
                 alert('ちゃんと我輩を選んだだろうな？');
+            });
+
+            $('button').click(function(){
+                var p = $('<p>').text('napoleon!!!!').addClass('appear');
+                $(this).before(p);
+            });
+            // $('.vanish').click(function(){
+            //     $(this).remove();
+            // });
+            $('body').on('click', '.appear', function(){
+                $(this).remove();
             });
         });
     </script>

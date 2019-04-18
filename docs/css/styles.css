@@ -65,29 +65,47 @@ header .navList li a{
 /* #top */
 #top{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
     letter-spacing: 2px;
 }
 #top .topTit{
-    width: 400px;
+    /* width: 400px; */
     font-size: 65px;
+    display: inline-block;
     position: relative; 
-    margin: 0 auto;
+    margin: 0;
     letter-spacing: 5px;
 }
 #top .topTit:after{
     content: "〜 I play a lot of roles 〜";
-    width: 400px;
+    /* width: 400px; */
     font-size: 28px;
     display: block;
     position: absolute;
     top: 80px;
-    left: 0;
+    left: 20px;
     letter-spacing: 2px;
+}
+#top .bigBox{
+    display: flex;
+    margin-top: 70px;
+}
+#top .leftBox{
+    width: 700px;
+    vertical-align: top;
+}
+#top .rightBox{
+    width: 600px;
+}
+#top .rightBox button{
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
 }
 #top .img{
     width: 273px;
-    margin: 60px auto 0;
+    height: 320px;
+    margin: 0 auto;;
     position: relative;
 }
 #top #napo{
@@ -101,7 +119,7 @@ header .navList li a{
     font-size: 22px;
     background: #696969;
     border-radius: 30px;
-    margin: 420px auto 0;
+    margin: 50px auto 0;
     padding: 10px;
     cursor: pointer;
 }
@@ -131,6 +149,25 @@ header .navList li a{
         top: 85%;
         left: 0;
     }
+    #top .bigBox{
+    display: block;
+    margin-top: 10%;
+}
+#top .leftBox{
+    width: 100%;
+    /* display: block; */
+    /* vertical-align: top; */
+}
+#top .rightBox{
+    width: 100%;
+    /* display: block; */
+}
+#top .rightBox button{
+    width: 80%;
+    height: auto;
+    font-size: 12px;
+    /* margin: 0 auto; */
+}
     #top .img{
         width: 60%;
         margin: 15% auto 0;
@@ -140,7 +177,7 @@ header .navList li a{
     color: #FFF;
     font-size: 18px;
     border-radius: 30px;
-    margin: 95% auto 0;
+    margin: 5% auto 0;
     padding: 2%;
     }
     #top .box{
